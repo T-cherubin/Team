@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonome | Accueil</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+
+    <style>
+        .breaking-news-section{
+            padding: 0 30px 0 60px;
+            display: flex;
+        }
+        #btext{
+            width: 200px;
+            font-size: 16px;
+            text-transform: uppercase;
+            color:#e08b6c;
+            font-weight: 600;
+            margin: auto 0;
+        }
+        .breaking-news{
+            padding: 30px;
+            color: #0e0d0d;
+            text-decoration: none;	
+            font-weight: 800;
+        }
+        .breaking-news:hover,.social-icons i:hover{
+            color:#e08b6c;
+            cursor: pointer;
+        }
+        .bntime{
+            display: inline-block;
+            color: rgba(255,255,255,0.5);
+            padding: 0 10px;
+            font-size: 16px;
+        }
+
+        #cta-section {
+            padding: 80px 6% 60px;
+            background-color: #07294d;
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+          }
+          
+          #cta-section .title {
+            flex-basis: 40%;
+            font-size: 34px;
+            font-weight: 700;
+            color: #fff;
+          }
+
+          #course-section {
+            padding: 40px 8% 60px;
+          }
+          
+          #course-section .course-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 60px;
+          }
+          
+          .course-header .header-left img {
+            width: 500px;
+          }
+          
+          .course-header .header-right {
+            padding: 20px 30px 20px 0;
+          }
+          
+          .header-right .title {
+            font-size: 40px;
+            font-weight: 600;
+          }
+          
+          .header-right .short-desc {
+            font-size: 16px;
+            line-height: 1.4;
+            padding: 10px 0 20px;
+          }
+          
+          .header-right .cards .card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            
+            border-radius: 5px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.5s;
+          }
+          
+          .cards {
+            background: midnightblue;
+            color: #fff;
+          }
+          .card .img {
+            background: transparent;
+            width: 100%;
+            padding: 3px;
+            border-radius: 5px;
+            margin-right: 70px;
+            transition: all 0.5s;
+          }
+          
+          .card .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #f1f1f1;
+            line-height: 1.6;
+            transition: all 0.5s;
+          }
+          
+          .header-right .cards .card:hover {
+            background-color: #07294d;
+            color: #fff;
+            transform: scale(1);
+          }
+          
+          .cards .card:hover .card-title {
+            color: #fff;
+          }
+          
+    
+          
+          
+          @media (max-width: 560px) {
+            #hero-section .hero-main,
+            #notice-social-section,
+            #course-section .course-header {
+              flex-direction: column;
+            }
+        }
+          
+       
+    </style>
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="home.html" class="logo"> <img src="images/logo.png" alt=""
+        style="width: 40px;">Autonomes</a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="about.html">Apropos</a></li>
+            <li><a href="#">cours +</a>
+                <ul>
+                    <li><a href="L1.html">Licence 01</a></li>
+                    <li><a href="L2.html">Licence 02</a></li>
+                    <li><a href="L3.html">Licence 03</a></li>
+                </ul>
+            </li>
+            <li><a href="#">pages +</a>
+                <ul>
+                    <li><a href="admin.html">Administrateurs</a></li>
+                    <li><a href="blog.html">blogs</a></li>
+                    <li><a href="Gallerie/index.html">gallerie</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="breaking-news-section">
+    <span id="btext">dernières news</span>
+    <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+        <a href="#" class="breaking-news"><p class="bntime">08 janvier 2024</p>Lancement des activites le 08 janvier 2023 </a>
+        <a href="#" class="breaking-news"><p class="bntime">08 janvier 2024</p> Tous les sous groupes des autonomes doivent etre actifs en Janvier</a>
+    </marquee>
+</div>
+<!--header section ends -->
+
+<!-- home section starts      -->
+
+<section class="home">
+
+    <div class="slide active" style="background: url(images/k.jpg) no-repeat;">
+        <div class="content">
+            <span>La team des Autonomes</span>
+            <h3>De l'échec a la réussite</h3>
+        </div>
+    </div>
+
+    <div class="slide" style="background: url(./Gallerie/images/auto12.jpg) no-repeat;">
+        <div class="content">
+            <span>La team des Autonomes</span>
+            <h3>Réussissez avec nous</h3>
+        </div>
+    </div>
+
+    <div class="slide" style="background: url(images/team.jpg) no-repeat;">
+        <div class="content">
+            <span>La team des Autonomes</span>
+            <h3>Le réussir ses études prend vie</h3>
+        </div>
+    </div>
+
+    <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+
+</section>
+
+<!-- home section ends     -->
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <div class="box">
+        <img src="images/banner-1.jpg" alt="">
+        <div class="content">
+            <span></span>
+            <h3></h3>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/banner_2.jpg" alt="">
+        <div class="content">
+            <span></span>
+            <h3></h3>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/banner-3.jpg" alt="">
+        <div class="content">
+            <span></span>
+            <h3></h3>
+        </div>
+    </div>
+
+</section>
+
+<!-- CTA section -->
+<section id="cta-section">
+    <h2 class="title">Nous sommes motivé par le desire de réussir.</h2>
+</section>
+
+
+<section id="course-section">
+    <!-- Course header -->
+    <div class="course-header">
+        <div class="header-left">
+            <img src="./Gallerie/images/12.jpg" width="50%" alt="course-header" />
+        </div>
+        <div class="header-right">
+            <h2 class="title">Améliorez vos connaissances avec notre groupe</h2>
+            <p class="short-desc">
+                Rejoignez notre groupe pour améliorer vos connaissances ! Un environnement d'apprentissage 
+                collaboratif où nous explorons des sujets diversifiés et partageons des idées inspirantes. 
+                Ensemble, nous repousserons les limites intellectuelles.
+            </p>
+            <div class="cards">
+                <!-- Card 01 -->
+                <div class="card">
+                    <div class="contents">
+                        <h3 class="card-title"> Notre device </h3>
+                        <p class="card-desc">
+                            Les Autonomes : Étudiez, Évoluez, Réussissez.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>explorez</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> accueil </a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> apropos </a>
+            <a href="L1.html"> <i class="fas fa-arrow-right"></i> L1 </a>
+            <a href="L2.html"> <i class="fas fa-arrow-right"></i> L2 </a>
+            <a href="L3.html"> <i class="fas fa-arrow-right"></i> L3 </a>
+            <a href="admin.html"> <i class="fas fa-arrow-right"></i> Admins </a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog </a>
+            <a href="Gallerie/index.html"> <i class="fas fa-arrow-right"></i> gallerie </a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+            <h3>Apprenez plus</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Design </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Reseaux Informatique</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Programmation</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Base de données</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Télécommunication</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Intelligence artificielle</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Bureautique</a>
+        </div>
+
+    </div>
+
+    <div class="credit"> créer par <span>dev chérubin</span> | Tout droit reservé </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/s.js"></script>
+
+</body>
+</html>

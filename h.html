@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="h.css">
+</head>
+<body>
+  <div class="options">
+    <ul>
+      <li onclick="showSchedule('L1')">L1</li>
+      <li onclick="showSchedule('L2')">L2</li>
+      <li onclick="showSchedule('L3')">L3</li>
+    </ul>
+  </div>
+
+  <div id="schedule" class="hide">
+    <h2>HORAIRE D'ETUDE</h2>
+    <table>
+      <tr>
+        <th></th>
+        <th>Lun</th>
+        <th>Mar</th>
+        <th>Mer</th>
+        <th>Jeu</th>
+        <th>Ven</th>
+        <th>Sam</th>
+      </tr>
+      <tr>
+        <th>cours</th>
+        <td>cours</td>
+        <td>cours</td>
+        <td>cours</td>
+        <td>cours</td>
+        <td>cours</td>
+        <td>cours</td>
+      </tr>
+      <tr>
+        <th>Prof</th>
+        <td>Prof</td>
+        <td>Prof</td>
+        <td>Prof</td>
+        <td>Prof</td>
+        <td>Prof</td>
+        <td>Prof</td>
+      </tr>
+    </table>
+    <button onclick="toggleSchedule()">Réduire l'horaire</button>
+    <button onclick="downloadSchedule()">Télécharger l'horaire</button>
+  </div>
+
+  <script src="h.js"></script>
+</body>
+</html>
